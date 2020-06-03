@@ -28,6 +28,12 @@ explore: promotion {}
 
 explore: store {}
 
-explore: store_sales {}
+explore: store_sales {
+  join: customer {
+  sql_on: ${store_sales.ss_customer_sk} = ${customer.c_customer_sk};;
+  relationship: many_to_one
+  type: left_outer # Could be excluded since left_outer is the default
+}
+}
 
 explore: time_dim {}
