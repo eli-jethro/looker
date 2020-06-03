@@ -12,7 +12,7 @@ view: store_sales {
     sql: ${TABLE}.ss_cdemo_sk ;;
   }
 
-  dimension: ss_coupon_amt {
+  measure: ss_coupon_amt {
     type: number
     sql: ${TABLE}.ss_coupon_amt ;;
   }
@@ -22,27 +22,27 @@ view: store_sales {
     sql: ${TABLE}.ss_customer_sk ;;
   }
 
-  dimension: ss_ext_discount_amt {
+  measure: ss_ext_discount_amt {
     type: number
     sql: ${TABLE}.ss_ext_discount_amt ;;
   }
 
-  dimension: ss_ext_list_price {
+  measure: ss_ext_list_price {
     type: number
     sql: ${TABLE}.ss_ext_list_price ;;
   }
 
-  dimension: ss_ext_sales_price {
+  measure: ss_ext_sales_price {
     type: number
     sql: ${TABLE}.ss_ext_sales_price ;;
   }
 
-  dimension: ss_ext_tax {
+  measure: ss_ext_tax {
     type: number
     sql: ${TABLE}.ss_ext_tax ;;
   }
 
-  dimension: ss_ext_wholesale_cost {
+  measure: ss_ext_wholesale_cost {
     type: number
     sql: ${TABLE}.ss_ext_wholesale_cost ;;
   }
@@ -57,23 +57,23 @@ view: store_sales {
     sql: ${TABLE}.ss_item_sk ;;
   }
 
-  dimension: ss_list_price {
+  measure: ss_list_price {
     type: number
     sql: ${TABLE}.ss_list_price ;;
   }
 
-  dimension: ss_net_paid {
+  measure: ss_net_paid {
     type: number
     value_format_name: id
     sql: ${TABLE}.ss_net_paid ;;
   }
 
-  dimension: ss_net_paid_inc_tax {
+  measure: ss_net_paid_inc_tax {
     type: number
     sql: ${TABLE}.ss_net_paid_inc_tax ;;
   }
 
-  dimension: ss_net_profit {
+  measure: ss_net_profit {
     type: number
     sql: ${TABLE}.ss_net_profit ;;
   }
@@ -83,12 +83,12 @@ view: store_sales {
     sql: ${TABLE}.ss_promo_sk ;;
   }
 
-  dimension: ss_quantity {
+  measure: ss_quantity {
     type: number
     sql: ${TABLE}.ss_quantity ;;
   }
 
-  dimension: ss_sales_price {
+  measure: ss_sales_price {
     type: number
     sql: ${TABLE}.ss_sales_price ;;
   }
@@ -113,7 +113,7 @@ view: store_sales {
     sql: ${TABLE}.ss_ticket_number ;;
   }
 
-  dimension: ss_wholesale_cost {
+  measure: ss_wholesale_cost {
     type: number
     sql: ${TABLE}.ss_wholesale_cost ;;
   }
