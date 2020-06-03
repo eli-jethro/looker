@@ -13,7 +13,7 @@ view: store_sales {
   }
 
   measure: ss_coupon_amt {
-    type: number
+    type: sum
     sql: ${TABLE}.ss_coupon_amt ;;
   }
 
@@ -23,27 +23,27 @@ view: store_sales {
   }
 
   measure: ss_ext_discount_amt {
-    type: number
+    type: sum
     sql: ${TABLE}.ss_ext_discount_amt ;;
   }
 
   measure: ss_ext_list_price {
-    type: number
+    type: sum
     sql: ${TABLE}.ss_ext_list_price ;;
   }
 
   measure: ss_ext_sales_price {
-    type: number
+    type: sum
     sql: ${TABLE}.ss_ext_sales_price ;;
   }
 
   measure: ss_ext_tax {
-    type: number
+    type: sum
     sql: ${TABLE}.ss_ext_tax ;;
   }
 
   measure: ss_ext_wholesale_cost {
-    type: number
+    type: sum
     sql: ${TABLE}.ss_ext_wholesale_cost ;;
   }
 
@@ -58,23 +58,22 @@ view: store_sales {
   }
 
   measure: ss_list_price {
-    type: number
+    type: sum
     sql: ${TABLE}.ss_list_price ;;
   }
 
   measure: ss_net_paid {
-    type: number
-    value_format_name: id
+    type: sum
     sql: ${TABLE}.ss_net_paid ;;
   }
 
   measure: ss_net_paid_inc_tax {
-    type: number
+    type: sum
     sql: ${TABLE}.ss_net_paid_inc_tax ;;
   }
 
   measure: ss_net_profit {
-    type: number
+    type: sum
     sql: ${TABLE}.ss_net_profit ;;
   }
 
@@ -84,12 +83,12 @@ view: store_sales {
   }
 
   measure: ss_quantity {
-    type: number
+    type: sum
     sql: ${TABLE}.ss_quantity ;;
   }
 
   measure: ss_sales_price {
-    type: number
+    type: sum
     sql: ${TABLE}.ss_sales_price ;;
   }
 
@@ -114,7 +113,7 @@ view: store_sales {
   }
 
   measure: ss_wholesale_cost {
-    type: number
+    type: sum
     sql: ${TABLE}.ss_wholesale_cost ;;
   }
 
