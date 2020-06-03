@@ -1,4 +1,4 @@
-connection: "postgres-pre-95"
+connection: "presto"
 
 # include all the views
 include: "/views/**/*.view"
