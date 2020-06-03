@@ -12,10 +12,6 @@ persist_with: item_default_datagroup
 
 explore: item {}
 
-# explore: _jethrosys_dup_table_a {}
-
-# explore: _jethrosys_dup_table_amex_load {}
-
 # explore: customer {}
 
 # explore: customer_address {}
@@ -103,4 +99,3 @@ explore: item {}
 # explore: unlimited_20 {}
 
 # explore: v2 {}
-
