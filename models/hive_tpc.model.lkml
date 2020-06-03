@@ -42,6 +42,11 @@ explore: store_sales {
     type: inner
   }
 
+  join: date_dim {
+    sql_on: ${store_sales.ss_sold_date_sk} = ${date_dim.d_date_sk};;
+    relationship: many_to_one
+    type: left_outer
+  }
 }
 
 explore: time_dim {}
