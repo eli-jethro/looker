@@ -29,11 +29,19 @@ explore: promotion {}
 explore: store {}
 
 explore: store_sales {
+
   join: customer {
   sql_on: ${store_sales.ss_customer_sk} = ${customer.c_customer_sk};;
   relationship: many_to_one
   type: left_outer # Could be excluded since left_outer is the default
-}
+  }
+
+  join: item {
+    sql_on: ${store_sales.ss_item_sk} = ${item.i_item_sk};;
+    relationship: many_to_one
+    type: inner
+  }
+
 }
 
 explore: time_dim {}
