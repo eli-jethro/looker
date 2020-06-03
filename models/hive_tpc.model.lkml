@@ -1,4 +1,4 @@
-connection: "hive2"
+connection: "postgres-pre-95"
 
 # include all the views
 include: "/views/**/*.view"
